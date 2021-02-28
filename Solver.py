@@ -6,23 +6,38 @@ from matplotlib import pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 from tabulate import tabulate
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7160185 (Initial commit)
 # funcion
 def f1(x):
     # funcion
     return math.exp(1) ** (-(x ** 2) + 2) - x * math.sin(2 * x - 3) + 1
 
 # definimos la variable
+<<<<<<< HEAD
 a =  float(input('Cual es la variable a? '))   #1.8  # ingresar la vsariable a
 b =   float(input('Cual es la variable b? '))     #2.0  # ingresar la vsariable b
 xm = (a + b) / 2  # resultado
 e=0 #cuando sale un error
 limite=11 # se ingresa el limite de la variable
+=======
+a =  float(input('Cual es la variable a? '))
+b =   float(input('Cual es la variable b? '))
+xm = (a + b) / 2  # resultado
+e=0 #cuando sale un error
+limite = 11 # se ingresa el limite de la variable
+>>>>>>> 7160185 (Initial commit)
 aa=a
 bb=b
 xmm=xm
 
 #datos de la estructura
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7160185 (Initial commit)
 arreglo=([1,a,b,xm,f1(a),f1(b),f1(xm),e]) #arreglo
 valores=([arreglo])  #lista del areglo objeto
 
@@ -48,6 +63,7 @@ for n in range(0,limite-1):
 
 print(tabulate(valores,headers=['#','a','b','xm','f(a)','f(b)','f(xm)','Error']))
 
+<<<<<<< HEAD
     # configura os ejes del centro
 
    # x = np.linspace(-20,20,1000)
@@ -63,3 +79,20 @@ print(tabulate(valores,headers=['#','a','b','xm','f(a)','f(b)','f(xm)','Error'])
     # Trazar la funcion
     # plt.plot(x,[f1(i) for i in x])
     #plt.show()
+=======
+   # configura os ejes del centro
+
+     x = np.linspace(-20,20,1000)
+     fig = plt.figure()
+     ax = fig.add_subplot(1, 1, 1)
+     ax.spines['left'].set_position('center')
+     ax.spines['bottom'].set_position('zero')
+     ax.spines['right'].set_position('none')
+     ax.spines['top'].set_position('none')
+     ax.xaxis.set_ticks_position('bottom')
+     ax.yaxis.set_ticks_position('left')
+
+     Trazar la funcion
+     plt.plot(x,[f1(i) for i in x])
+     plt.show()
+>>>>>>> 7160185 (Initial commit)
