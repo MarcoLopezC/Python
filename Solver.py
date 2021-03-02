@@ -82,7 +82,7 @@ print(tabulate(valores,headers=['#','a','b','xm','f(a)','f(b)','f(xm)','Error'])
 =======
    # configura os ejes del centro
 
-     x = np.linspace(-20,20,1000)
+     x= np.linspace(-20,20,1000)
      fig = plt.figure()
      ax = fig.add_subplot(1, 1, 1)
      ax.spines['left'].set_position('center')
